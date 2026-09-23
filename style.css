@@ -4,69 +4,154 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
+    background: #f5f5f5;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 .container {
     width: 90%;
     max-width: 900px;
-    margin: 40px auto;
+    margin: 30px auto;
 }
 
-h1, h2, h3 {
-    color: #333;
-}
+/* Cards */
 
 .card {
     background: white;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ddd;
 }
 
-input[type="text"],
-input[type="password"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Headings */
+
+h1 {
+    margin-top: 0;
+    font-size: 32px;
 }
 
-textarea {
-    resize: vertical;
+h2 {
+    margin-top: 0;
+    font-size: 24px;
 }
 
-button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 5px;
-    cursor: pointer;
+h3 {
+    margin-bottom: 10px;
 }
 
-button:hover {
-    background: #0056b3;
-}
+/* Links */
 
 a {
-    color: #007bff;
+    color: #0066cc;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-.message {
-    padding: 10px;
-    margin-bottom: 15px;
-    background: #e8f5e9;
+/* Form */
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Buttons */
+
+button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #004c99;
+}
+
+/* Posts */
+
+.post {
+    padding: 15px 0;
+}
+
+.post h3 {
+    color: #222;
+}
+
+.post small {
+    color: #777;
+}
+
+/* Pagination */
+
+.pagination {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+
+.pagination a:hover {
+    background: #f0f0f0;
+}
+
+.pagination a.active {
+    background: #0066cc;
+    color: white;
+    border-color: #0066cc;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 5px;
+    }
 }
